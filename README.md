@@ -99,14 +99,20 @@ https://labs.msaez.io/#/storming/be71767ff41d7451dc536032cebe2b0b
 - docker image 빌드 및 push  
   ![image](https://user-images.githubusercontent.com/110404800/217187118-1d2ca7c5-2e12-4740-b3f4-8defac86f7a7.png)  
   ![image](https://user-images.githubusercontent.com/110404800/217408607-f4baa1e9-c67b-4e89-8d0c-386209baf89b.png)  
-- gateway external-ip 확인  
-  ![image](https://user-images.githubusercontent.com/110404800/217412112-dc790de6-54fb-4d90-b165-e810dd73cdbd.png)  
-- 예약 신청 및 확인  
-  
-  
+- 
   
 
 ## 8. **Autoscale (HPA)**
+- reservation 서비스에 대해 cpu 사용률 초과시 replicat를 10개까지 늘려준다
+![image](https://user-images.githubusercontent.com/119907065/217411470-c2cee327-c233-49d0-a771-dcc80e86f211.png)
+![image](https://user-images.githubusercontent.com/119907065/217411863-b489ddc3-eb8e-4569-a020-082528b3cc42.png)
+- 부하생성
+![image](https://user-images.githubusercontent.com/119907065/217412080-da0d68c2-cae7-4b62-8d66-94ffb0512317.png)
+- 해당 서비스 사용률 및 pod 증가 확인
+![image](https://user-images.githubusercontent.com/119907065/217412187-b1bdf0bd-6362-4439-971d-45ac868faaf7.png)
+![image](https://user-images.githubusercontent.com/119907065/217412249-cc7d5d2b-75b3-4fb7-a0be-05c3bae7009d.png)
+
+
 
 ## 9. **Zero-downtime deploy (Readiness probe)**
 
